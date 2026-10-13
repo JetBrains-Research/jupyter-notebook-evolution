@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use this code or the JuNE dataset, please cite the paper below."
+title: "Observing Fine-Grained Changes in Jupyter Notebooks During Development Time"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/JetBrains-Research/jupyter-notebook-evolution"
+url: "https://huggingface.co/datasets/JetBrains-Research/JuNE"
+doi: 10.5281/zenodo.20669481
+authors:
+  - family-names: Titov
+    given-names: Sergey
+    affiliation: JetBrains Research
+  - family-names: Grotov
+    given-names: Konstantin
+    affiliation: JetBrains Research
+  - family-names: Sarasua
+    given-names: Cristina
+    affiliation: University of Zurich
+  - family-names: Golubev
+    given-names: Yaroslav
+    affiliation: JetBrains Research
+  - family-names: Ramasamy
+    given-names: Dhivyabharathi
+    affiliation: University of Zurich
+  - family-names: Bacchelli
+    given-names: Alberto
+    affiliation: University of Zurich
+  - family-names: Bernstein
+    given-names: Abraham
+    affiliation: University of Zurich
+  - family-names: Bryksin
+    given-names: Timofey
+    affiliation: JetBrains Research
+preferred-citation:
+  type: article
+  title: "Observing fine-grained changes in Jupyter notebooks during development time"
+  authors:
+    - family-names: Titov
+      given-names: Sergey
+    - family-names: Grotov
+      given-names: Konstantin
+    - family-names: Sarasua
+      given-names: Cristina
+    - family-names: Golubev
+      given-names: Yaroslav
+    - family-names: Ramasamy
+      given-names: Dhivyabharathi
+    - family-names: Bacchelli
+      given-names: Alberto
+    - family-names: Bernstein
+      given-names: Abraham
+    - family-names: Bryksin
+      given-names: Timofey
+  journal: "Journal of Systems and Software"
+  volume: 241
+  year: 2026
+  doi: 10.1016/j.jss.2026.112983
+  keywords:
+    - Computational notebooks
+    - Jupyter notebooks
+    - Software evolution
+    - Fine-grained logs

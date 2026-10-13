@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Env / secrets
+.env*
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+.ipynb_checkpoints/
+
+# Large / generated artifacts excluded due to size.
+# Available in the Zenodo package: https://doi.org/10.5281/zenodo.20669481
+model_training/data/processed/codebert_hackathon_cell_source_embeddings.csv
+notebook_reproduction/remote_environment/data/task1/jetnet_logs.txt
+notebook_reproduction/remote_environment/data/task1/unzip/
+*.pkl

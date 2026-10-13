@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "jupyter-analysis"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+packages = [
+    { include = "analysis" },
+    { include = "server" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyter = "1.0.0"
+pandas = "^2.0.3"
+pyyaml = "^6.0.1"
+graphviz = "^0.20.1"
+networkx = "^3.1"
+tqdm = "^4.66.1"
+radon = "^6.0.1"
+code-diff = "^0.1.2"
+pydotplus = "^2.0.2"
+matplotlib = "3.7.0"
+seaborn = "^0.12.2"
+pingouin = "^0.5.3"
+plotly = "^5.16.1"
+levenshtein = "^0.22.0"
+openai = "^1.44.1"
+nltk = "^3.9.1"
+
+
+[tool.poetry.group.server.dependencies]
+flask = "^2.3.2"
+sqlalchemy-utils = "^0.41.1"
+sqlalchemy = "^2.0.20"
+flask-cors = "^4.0.0"
+flask-sqlalchemy = "^3.0.5"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.2"
+
+
+[tool.poetry.group.model-training.dependencies]
+catboost = "^1.2.5"
+sentence-transformers = "^3.0.1"
+
+
+[tool.poetry.group.notebook-reproduction.dependencies]
+python-dotenv = "^1.0.1"
+docker = "^7.1.0"
+selenium = "^4.22.0"
+omegaconf = "^2.3.0"
+pyperclip = "^1.9.0"
+strenum = "^0.4.15"
+
+[tool.poetry.scripts]
+run_server = 'server.app:run_server'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.isort]
+profile = "black"
+force_sort_within_sections = true
+order_by_type = true
